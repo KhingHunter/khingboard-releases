@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+    <channel>
+        <title>KhingBoard</title>
+        <link>https://raw.githubusercontent.com/KhingHunter/khingboard-releases/main/appcast.xml</link>
+        <description>Update feed for KhingBoard, the macOS whiteboard for AI context.</description>
+        <language>en</language>
+        <item>
+            <title>0.1</title>
+            <pubDate>Tue, 04 Aug 2026 19:07:02 +0000</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/KhingHunter/khingboard-releases/releases/tag/v0.1</link>
+            <description><![CDATA[
+<p>Sketch the thing, then hand the whole board to your AI.</p>
+<h3>New</h3>
+<ul>
+<li><strong>An infinite canvas built for briefing a model.</strong> Boxes, arrows, text, sticky notes and dropped images on a space that never runs out. Arrows stay attached to the shapes they connect, so moving a box redraws the flow instead of stranding the line.</li>
+<li><strong>Copy as AI context, on ⇧⌘C.</strong> One shortcut puts two things on the clipboard at once: a picture of the board, and a written description of it. Paste into Claude, ChatGPT or anything else and both arrive together. The picture carries the layout, the text carries the exact labels and which arrow joins what, so nothing rests on the model squinting at your handwriting.</li>
+<li><strong>Reads and writes <code>.excalidraw</code> files.</strong> Boards are plain files in a format other tools already open, kept where you put them. Nothing is locked in a library, and opening a board someone sent you works.</li>
+<li><strong>Agents can read the board themselves.</strong> KhingBoard runs a local MCP server with a <code>get_board</code> tool, so Claude Code can look at what you have drawn without an export-and-paste round trip. Sketch, then say "look at my board."</li>
+</ul>
+<p>The reason for the two clipboard layers is worth saying plainly: modern vision models read a clean sketch almost perfectly well on their own. What they do badly is commit. Given only the picture they hedge (which line does that label belong to, is that word really what it looks like), and hedging in an agent workflow turns into either a clarifying question or a wrong build. The written layer removes the ambiguity rather than the illegibility.</p>
+<p>This is the first release, so it is deliberately small: one canvas, one export, one tool for agents to call. Write-back, where the agent leaves sticky notes on your board, is the next thing.</p>
+            ]]></description>
+            <enclosure url="https://github.com/KhingHunter/khingboard-releases/releases/download/v0.1/KhingBoard-0.1.dmg"
+                       sparkle:edSignature="u97q9SvCPtbAdM3EuzDXOH7WEt3p0B1kiwo0vqRajEOHoaH2bwNqQJWRjxyQdIZ4Bm6vvTSCnSG9NwmPI3DHDA=="
+                       length="3127390"
+                       type="application/octet-stream"/>
+        </item>
+    </channel>
+</rss>
