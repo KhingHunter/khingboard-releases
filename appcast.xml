@@ -6,6 +6,43 @@
         <description>Update feed for KhingBoard, the macOS whiteboard for AI context.</description>
         <language>en</language>
         <item>
+            <title>0.2</title>
+            <pubDate>Wed, 05 Aug 2026 21:35:03 +0000</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/KhingHunter/khingboard-releases/releases/tag/v0.2</link>
+            <description><![CDATA[
+<p>A real editor around the canvas: properties, layers, groups, and a crash fixed.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>KhingBoard could quit while saving.</strong> A background save called into the document from the wrong thread and tripped a Swift concurrency check, which ends the app outright rather than raising anything you could dismiss. It could happen on any save, including the automatic ones, so this is the reason to update even if nothing below appeals.</li>
+</ul>
+<h3>New</h3>
+<ul>
+<li><strong>A Properties panel.</strong> Everything about the selected shape in one place: position and size, rotation, corner rounding, stroke colour, width, style and sloppiness, fill and fill style, opacity, and the full type controls — font, size, line height, and both alignments. With nothing selected it edits the defaults instead, so you can set up how the next thing you draw will look.</li>
+<li><strong>A Layers panel.</strong> Every element on the board, front to back, with frames and their contents nested underneath. Click to select, drag to reorder, drag onto a frame to move something into it, and lock anything you want to stop hitting by accident. Double-click a frame's row to rename it.</li>
+<li><strong>Group and ungroup, on ⌘G and ⇧⌘G.</strong> Clicking one member takes the whole group; the Layers panel is how you reach a single element inside one. Groups are written into the file the way Excalidraw writes them, so a grouped board opens grouped there too.</li>
+<li><strong>An image tool.</strong> Press <code>I</code> or use the last button on the tool bar, choose a file, and click to place it. Images could previously only arrive by dragging or pasting them in.</li>
+<li><strong>A right-click menu</strong> on the canvas, with cut, copy, paste, delete, group, the arrange commands and lock. Paste and Insert Image… land where you clicked.</li>
+<li><strong>Align, distribute and flip</strong>, plus arrowheads you can change after the fact on either end of an arrow.</li>
+<li><strong>Figma's keyboard shortcuts</strong> for the tools: <code>V</code> <code>H</code> <code>R</code> <code>O</code> <code>D</code> <code>A</code> <code>L</code> <code>P</code> <code>T</code> <code>S</code> <code>F</code>, and <code>I</code> for images. The arrow is <code>A</code> rather than Figma's <code>⇧L</code>, because on a whiteboard the arrow is the mark you reach for constantly.</li>
+</ul>
+<h3>Better</h3>
+<ul>
+<li><strong>A new app icon</strong>, the Markup Arrow, on the app, the menu bar and your board files alike.</li>
+<li><strong>A menu bar item</strong>, for a new board, your recent ones, and checking for updates without going hunting for the window.</li>
+<li><strong>A redesigned start page</strong>, with a picture of each recent board rather than just its name, and when you last touched it.</li>
+<li><strong>Boards open at a usable size.</strong> New windows were opening small enough that the panels crowded the canvas.</li>
+<li><strong>Tooltips</strong> on the tool bar and the zoom controls, each with its shortcut.</li>
+</ul>
+            ]]></description>
+            <enclosure url="https://github.com/KhingHunter/khingboard-releases/releases/download/v0.2/KhingBoard-0.2.dmg"
+                       sparkle:edSignature="8tXS6/94983BTlM1kS4II+QEfmBoO0e0Eri9fgJfQ1Z1V5T7ciSjIKglkxB0tE7bWeNNb9V61nuN2kY5PT+4Bg=="
+                       length="3913988"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
             <title>0.1</title>
             <pubDate>Tue, 04 Aug 2026 19:07:02 +0000</pubDate>
             <sparkle:version>2</sparkle:version>
