@@ -6,6 +6,26 @@
         <description>Update feed for KhingBoard, the macOS whiteboard for AI context.</description>
         <language>en</language>
         <item>
+            <title>0.2.1</title>
+            <pubDate>Wed, 05 Aug 2026 22:10:45 +0000</pubDate>
+            <sparkle:version>4</sparkle:version>
+            <sparkle:shortVersionString>0.2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>15.0</sparkle:minimumSystemVersion>
+            <link>https://github.com/KhingHunter/khingboard-releases/releases/tag/v0.2.1</link>
+            <description><![CDATA[
+<p>You can now choose KhingBoard from a board file's <strong>Open With</strong> menu.</p>
+<h3>Fixed</h3>
+<ul>
+<li><strong>KhingBoard was missing from Open With for <code>.excalidraw</code> files.</strong> It deliberately does not take the association away from Excalidraw or your browser, but it was declaring that a shade too strongly — strongly enough that macOS left it out of the list altogether, so double-clicking a board reached TextEdit and there was no way to point it at KhingBoard by hand. It is now offered alongside the others, and <strong>Always Open With</strong> sticks if you pick it.</li>
+</ul>
+<p>Nothing else changed from 0.2.</p>
+            ]]></description>
+            <enclosure url="https://github.com/KhingHunter/khingboard-releases/releases/download/v0.2.1/KhingBoard-0.2.1.dmg"
+                       sparkle:edSignature="UF3s9jwDecJg3i8S4YAmPvtw9f9rtuio64lydWYFYzu54kaR9aVdQmvtm+4Sunnpo7JwVYnG97BEcoVRyfX9Ag=="
+                       length="3914006"
+                       type="application/octet-stream"/>
+        </item>
+        <item>
             <title>0.2</title>
             <pubDate>Wed, 05 Aug 2026 21:35:03 +0000</pubDate>
             <sparkle:version>3</sparkle:version>
